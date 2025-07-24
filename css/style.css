@@ -1,0 +1,115 @@
+/*Noto Serif Font linkup */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+.headline-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+/* Inter font linkup */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.paragraph-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Custom CSS for the website */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.home {
+  color: rgba(37, 36, 50, 1);
+}
+.shop,
+.about {
+  color: rgba(137, 135, 161, 1);
+}
+
+/* Mobile responsive banner section */
+@media screen and (max-width: 576px) {
+  .home,
+  .shop,
+  .about {
+    display: none;
+  }
+  .navbar {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar img {
+    height: 3rem;
+    width: 4.2rem;
+  }
+  .navbar ul {
+    gap: 0;
+    margin-top: 30px;
+  }
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  margin: 120px 130px;
+  padding-top: 130px;
+}
+.banner-content {
+  width: 100%;
+  text-align: start;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 13px;
+}
+.banner-title span {
+  color: rgba(233, 90, 8, 1);
+}
+.banner-description {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.banner-image img {
+  margin-top: 25px;
+  width: 100%;
+}
+/* Responsive Banner section */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 8px;
+  }
+}
